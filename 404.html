@@ -9,7 +9,6 @@
 	<meta property="og:image" content="undefined">
 	<link href="favicon.png" rel="icon">
 	<link rel="stylesheet" href="/hexo-theme-freemind/css/bootstrap.min.css" media="screen" type="text/css">  
-	<link rel="stylesheet" href="/hexo-theme-freemind/css/font-awesome.min.css" media="screen" type="text/css">
 	<link rel="stylesheet" href="/hexo-theme-freemind/css/style.css" media="screen" type="text/css">  
 	<script src="/hexo-theme-freemind/js/jquery-2.0.3.min.js"></script>
   </head>
@@ -69,12 +68,9 @@
 			<div class="spell-img">
 			  <img src="/hexo-theme-freemind/images/404.png">
 			</div>
-			<p>Don't worry, search your articles: </p>
-			<form>
-			  <input type="text" id="st-search-input" class="st-search-input">
-			</form>
+			<input type="text" id="local-search-input" name="q" results="0" placeholder="Don't worry, search your articles..." class="st-search-input st-default-search-input form-control" style="margin-bottom:1em">
 		  </div>
-		  <div id="st-results-container"></div>
+		  <div id="local-search-result"></div>
 		</div>
 	  </div>
     </div> <!-- container -->	
@@ -87,36 +83,12 @@
 	  </p> </footer>
 	</div> <!-- container-narrow -->
 
-	<!-- Modal -->
-	<div id="mysearch" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			  <h3 id="myModalLabel">Search on this site</h3>
-			</div>
-		  </div>
-		  <div class="modal-body">
-			<script>
-			  (function() {
-			  var cx = '016950260961535173682:t7cm7r9vl2m';
-			  var gcse = document.createElement('script');
-			  gcse.type = 'text/javascript';
-			  gcse.async = true;
-			  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			  '//www.google.com/cse/cse.js?cx=' + cx;
-			  var s = document.getElementsByTagName('script')[0];
-			  s.parentNode.insertBefore(gcse, s);
-			  })();
-			</script>
-			<gcse:search></gcse:search>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
 	<script src="/hexo-theme-freemind/js/bootstrap.min.js"></script>
+	<script src="/hexo-theme-freemind/js/search.js"></script> 
+	<script type="text/javascript">      
+     var path = "/hexo-theme-freemind/search.xml";
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
   </body>	
 </html>
 

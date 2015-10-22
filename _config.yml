@@ -1,36 +1,28 @@
-slogan: "Yet another bootstrap theme."
+slogan: "欢迎访问黄复得的博客！"
 
 menu:
-  - title: Archives
+  - title: 文章列表
     url: archives
     intro: "All the articles."
     icon: "fa fa-archive"
-  - title: Categories
+  - title: 分类
     url: categories
     intro: "All the categories."
     icon: "fa fa-folder"
-  - title: Tags
+  - title: 标签云
     url: tags
     intro: "All the tags."
     icon: "fa fa-tags"
-  - title: About
+  - title: 关于我
     url: about
     intro: "About me."
     icon: "fa fa-user"
 
 links:
-  - title: Freemind
-    url: https://github.com/wzpan/freemind/
-    intro: "Freemind's Github repository."
-    icon: "fa fa-github"
-  - title: "My Github"
-    url: http://www.github.com/wzpan
-    intro: "My Github account."
-    icon: "fa fa-github"
-  - title: "My LinkedIn"
-    url: http://www.linkedin.com/in/hahack
-    intro: "My Linkin account."
-    icon: "fa fa-linkedin"
+  - title: "黄复得"
+    url: http://www.huangfude.com/
+    intro: "黄复得的博客"
+    icon: "fa fa-link"
 
 widgets:
 - search
